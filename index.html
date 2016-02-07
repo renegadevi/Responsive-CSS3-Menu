@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Responsive-CSS3-Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
+<style>
+    * {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+
+        -webkit-font-smoothing: antialiased;
+           -moz-font-smoothing: antialiased;
+                font-smoothing: antialiased;
+
+        text-rendering: optimizeLegibility;
+
+    }
+    body {
+        margin: 0 auto;
+        height:100%;
+        max-width: 64em;
+        overflow-x:hidden;
+        color: #666666;
+        background: #fcfcfc;
+    }
+    a { text-decoration: none; }
+    header {
+        display: table;
+        height: 10vh;
+        max-height: 5em;
+        width: 100vw;
+        border-bottom: 0.2em solid #cccccc;
+    }
+    header #logo {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1em;
+    }
+
+    header #logo img {
+        height: 3em;
+        max-width: 16em;
+    }
+
+    nav  {
+        width: 100%;
+        display: table-caption;
+        caption-side: bottom;
+    }
+    nav ul {
+        margin:0;
+        padding:0;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        padding: 1em 2em;
+        display: block;
+        color: #999999;
+    }
+
+    .toggle:hover {
+        cursor: pointer;
+    }
+    .toggle {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        max-height: 100%;
+        width: 20vw;
+        font-size: 2em;
+    }
+
+    nav + ul.menu {
+        width: 100%;
+        float:none;
+    }
+
+    #dropdown {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        background: #dddddd;
+    }
+    section {
+        padding:2em;
+    }
+
+    @media all and (max-width: 63em) {
+        #dropdown + .menu {
+            height:0;
+            position: relative;
+            background: #fcfcfc;
+            overflow:hidden;
+            transition-property: height, border-color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+        #dropdown:checked + .menu {
+          display: block;
+          position: fixed;
+          width: 100vw;
+          height:90vh; /* Workaround for CSS Transitions not supporting 0 or auto */
+          overflow: auto;
+
+        }
+    }
+    @media all and (min-width: 63em) {
+        header {
+            width: 64em;
+        }
+        header #logo {
+            width: 22em;
+        }
+        header #logo img {
+            min-width: 16em;
+            max-width: 20em;
+        }
+
+        nav {
+            float:left;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            display: inline-block;
+            float:right;
+            height: 6em;
+            line-height: 4em;
+        }
+        nav ul li a:hover {
+            color: #121212;
+            background: none;
+        }
+        .toggle {
+            display: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href=""><img alt="WEBSITE NAME" src="logo.svg"></a></div>
+        <label for="dropdown" class="toggle"><i class="fa fa-bars"></i></label>
+        <nav>
+            <input type="checkbox" id="dropdown" />
+            <ul class="menu">
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+                <li><a href="">Link 5</a></li>
+                <li><a href="">Link 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Responsive Pure CSS3 Dropdown</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+</body>
+</html>
