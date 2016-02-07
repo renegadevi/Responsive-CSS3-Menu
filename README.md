@@ -34,5 +34,11 @@ in a Windows-enviroment or Internet Explorer. Feedback is welcome.
 support some type of backwards compatability.*
 
 
+## Screenshots
+
+![Screenshot1](https://raw.githubusercontent.com/renegadevi/Responsive-CSS3-Template/master/Screenshots/Desktop.png)
+![Screenshot2](https://raw.githubusercontent.com/renegadevi/Responsive-CSS3-Template/master/Screenshots/Mobile.png)
+![Screenshot3](https://raw.githubusercontent.com/renegadevi/Responsive-CSS3-Template/master/Screenshots/Menu.png)
+
 ## License
 MIT License
