@@ -1,4 +1,4 @@
-# Responsive CSS3 Template
+# Responsive CSS3 Menu
 
 A simple responsive mobile-first template with modern CSS3 menu, no Javascript
 required, a modern browser is.
